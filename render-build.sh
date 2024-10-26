@@ -3,5 +3,7 @@
 set -o errexit
 
 # Install project dependencies
-npm install
+npm ci
+
+# Ensure Puppeteer installs Chrome
 npm run postinstall
