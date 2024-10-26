@@ -30,10 +30,10 @@ async function checkStock(productUrl) {
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',  // Helps with memory issues on limited environments
+        '--disable-dev-shm-usage',
         '--disable-gpu',
       ],
-      executablePath: '/opt/render/.cache/puppeteer/chrome/linux-130.0.6723.58/chrome-linux64/chrome',
+      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH,
       headless: true,
     });
     const page = await browser.newPage();
