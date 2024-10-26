@@ -4,3 +4,4 @@ set -o errexit
 
 # Install project dependencies
 npm install
+npm run postinstall
