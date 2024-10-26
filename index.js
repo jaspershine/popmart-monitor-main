@@ -1,5 +1,5 @@
 import express from 'express';
-import puppeteer from 'puppeteer';
+import puppeteer from 'puppeteer-core';
 
 
 const url = process.env.PRODUCT_URL || 'https://www.popmart.com/us/products/675/the-monsters-exciting-macaron-vinyl-face-blind-box';
