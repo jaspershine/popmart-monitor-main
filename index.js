@@ -26,9 +26,8 @@ async function checkStock(productUrl) {
   try {
     console.log(`Checking stock for: ${productUrl}`);
     // Launch a new browser instance
-    const browser = await puppeteer.launch({
+    browser = await puppeteer.launch({
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      executablePath: process.env.PUPPETEER_EXECUTABLE_PATH || '/usr/bin/chromium',
       headless: 'new',
     });
     const page = await browser.newPage();
