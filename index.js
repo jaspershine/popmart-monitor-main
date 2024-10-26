@@ -4,7 +4,7 @@ import puppeteer from 'puppeteer';
 
 const url = process.env.PRODUCT_URL || 'https://www.popmart.com/us/products/675/the-monsters-exciting-macaron-vinyl-face-blind-box';
 
-const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL || 'https://discord.com/api/webhooks/1299538046479499375/xZZrLYRj3QU7nh7qQRoykR0H2YCtJAseSXAzJvVd1G0J4VAXzYTTjqnjwshwRrz2AK2B'; //webhook go here
+const discordWebhookUrl = process.env.DISCORD_WEBHOOK_URL; //webhook go here
 
 
 const app = express();
